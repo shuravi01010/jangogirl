@@ -1,9 +1,57 @@
 *.pyc
-*~
-__pycache__
+*__pycache__
 /static
 .DS_Store
-.idea
-__pycache__
+*.idea
 newvenv
-db.sqlite3
+*.db.sqlite3
+
+*.manifest
+*.spec
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+.static_storage/
+.media/
+local_settings.py
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
