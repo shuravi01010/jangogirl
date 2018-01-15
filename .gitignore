@@ -1,7 +1,9 @@
-*.idea
+*.pyc
 *~
+__pycache__
+/static
+.DS_Store
+.idea
 __pycache__
 newvenv
 db.sqlite3
-/static
-.DS_Store
