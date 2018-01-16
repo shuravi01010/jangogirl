@@ -4,6 +4,18 @@ from django.shortcuts import render, get_object_or_404
 from .forms import PostForm
 from django.shortcuts import redirect
 
+from rest_framework import generics
+from .serializers import PostSerializer
+
+
+# Create your views here.
+class PostList(generics.ListCreateAPIView):
+    serializer_class = PostSerializer
+    queryset = Post.objects.filter()
+
+class PostDetail(generics.RetrieveUpdateDestroyAPIView):
+    serializer_class = PostSerializer
+    queryset = Post.objects.filter()
 
 def post_list(request):
     posts = Post.objects.filter().order_by('published_date')
@@ -44,3 +56,10 @@ def post_edit(request, pk):
     else:
         form = PostForm(instance=post)
     return render(request, 'blog/post_edit.html', {'form': form})
+
+
+
+
+
+
+
