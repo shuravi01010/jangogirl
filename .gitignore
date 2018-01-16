@@ -1,6 +1,2 @@
-# file: ~/.gitignore_global
-.DS_Store
-.idea
-*.py[co]
-newvenv/include/
 /.idea
+*.py[co]
